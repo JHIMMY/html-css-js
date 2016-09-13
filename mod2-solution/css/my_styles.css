@@ -1,0 +1,22 @@
+/* Basic all purpose CSS rules */
+body {
+   font-family: 'Baloo Tamma', cursive;
+}
+
+
+
+/* Only Mobile CSS*/
+@media (max-width:767px){
+   
+}
+
+/* Tablet CSS Breakpoints*/
+@media (min-width:768px) and (max-width: 991px){
+   
+}
+
+/* Desktop CSS breakpoint */
+@media (min-width: 992px){
+   
+}
+
