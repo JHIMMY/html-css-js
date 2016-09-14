@@ -1,22 +1,110 @@
 /* Basic all purpose CSS rules */
-body {
-   font-family: 'Baloo Tamma', cursive;
+
+ *{
+   box-sizing: border-box;
 }
 
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Baloo Tamma', cursive;
+   font-size: 15px;
+}
 
+.container {
+   padding: 1% 4% 1% 4%;
+}
+
+h1 {
+   text-align: center;
+   font-weight:700;
+   font-size: 1.75em;
+}
+
+section {
+   position: relative;
+   border: 1px solid black;
+   margin-bottom: 30px;
+   background-color: cornsilk;
+}
+
+section > h2 {
+   font-family: sans-serif;
+   font-size: 1.25em;
+   float: right;
+   width: 35%;
+   text-align: center;
+   margin-top: 0;
+   padding:4px 0;
+   border-style: solid;
+   border-color: black;
+   border-width: 0 0 1px 1px;
+}
+
+section > p{
+   clear: right;
+   font-family: sans-serif;
+   font-size: 15px;
+   color: #333;
+   text-align: justify;
+   padding: 0 3%;
+}
+
+#chicken{
+   background-color:indianred;
+   color: floralwhite;
+}
+
+#beef{
+   background-color:deepskyblue;
+}
+
+#sushi{
+   background-color:lightseagreen;
+   color: floralwhite
+}
 
 /* Only Mobile CSS*/
 @media (max-width:767px){
-   
+   .container {
+      padding: 1% 12%;
+   }
 }
 
 /* Tablet CSS Breakpoints*/
 @media (min-width:768px) and (max-width: 991px){
+   .container {
+      padding: 0;   
+   }
    
+   section:nth-child(2) {
+      width: 46.2%;
+      margin: 1% 2.5%;
+   }
+   
+   section {
+      width: 46.2%;
+      margin: 1% 0;
+      float: left;
+   }
+   
+   section:last-child {
+      width: 95%;
+      margin: 1% 2.5%;
+   }
 }
 
 /* Desktop CSS breakpoint */
 @media (min-width: 992px){
    
+   .container {
+      padding: 1% 2% 1% 5%;   
+   }
+   
+   section {
+      width: 30%;
+      margin-right: 3%;
+      float: left;
+   }
 }
 
