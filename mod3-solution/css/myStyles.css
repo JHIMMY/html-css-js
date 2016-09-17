@@ -1,0 +1,57 @@
+/**** Basic Styles ****/
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+#my-navbar {
+   background-color: lightseagreen;
+   border-radius: 0;
+}
+
+.navbar-header .navbar-brand {
+   font-weight: 600;
+   font-size: 32px;
+   color: whitesmoke;
+   text-shadow: -3px 3px 1px rgba(150, 150, 150, 1);
+}
+#nav-button {
+   border-color: whitesmoke;
+}
+#nav-button:hover {
+   background-color: whitesmoke;
+}
+#collapsed-items ul {
+   text-align: center;
+   font-weight: 600;
+}
+#title {
+   margin: 0 0 30px;
+   font-weight: 600;
+}
+.row-content {
+   margin: 0;
+   margin-bottom: 50px;
+}
+section {
+   border: 1px solid black;
+   background-color:lightblue;
+}
+
+section > h3 {
+   font-size: 22px;
+}
+
+
+/**** For Extra Small Devices 767 ****/
+@media (max-width: 767px) {
+   #collapsed-items  {
+      background-color: mediumaquamarine;
+   }
+   #title {
+      margin: 0 0 25px;
+      font-weight: 600;
+      font-size: 26px;
+   }
+}
